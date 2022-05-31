@@ -1,0 +1,90 @@
+@media only screen and (max-width: 600px) {
+
+  body {
+    width: 100%;
+    height: max-content;
+  }
+
+  .container, .navContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .navContainer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  #mainNav li {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  #mainHeader {
+    width: 100%;
+    height: 15%;
+  }
+
+  #overview:hover, #prereqs:hover, #biography:hover {
+    background-color: rgb(226, 226, 226, 0.0);
+    transition: background-color 0.5s ease
+  }
+
+  #horizontalBorder2 {
+    display: block;
+    margin-top: 7%;
+  }
+
+  #horizontalBorder, #horizontalBorder2 {
+    position: relative;
+    width: 0;
+    /* margin-top: 7%; */
+    animation: borderSlide ease-in-out 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes borderSlide {
+    0%      { width: 0; opacity: 0%; } 
+    5%      { opacity: 50%;}
+    100%    { width: 100%; opacity: 50% }
+  }
+
+  #rightBorder {
+    display: none;
+  }
+
+  #leftSide {
+    order: 1;
+  }
+
+  #rightSide {
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #introImage {
+    margin-left: 0;
+    align-self: center;
+  }
+
+  #biography {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+  }
+
+  #gwTrailer, #audio1, #audio2, #audio3, #audio4 {
+    margin-left: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-self: center;
+  }
+}
